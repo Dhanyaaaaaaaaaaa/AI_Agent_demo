@@ -1,0 +1,33 @@
+{
+  "project_name": "Team Task Management App",
+  "epic": "Team Collaboration",
+  "stakeholders": [
+    "Product Manager",
+    "Development Team",
+    "UX Designer",
+    "QA Engineer",
+    "End Users"
+  ],
+  "items": [
+    {
+      "title": "Team Collaboration Features",
+      "description": "Enable multiple users to collaborate on shared tasks and projects within the app.",
+      "acceptance_criteria": [
+        "Users can create shared projects accessible to multiple team members",
+        "Team members can assign tasks to each other",
+        "Changes to tasks are updated in real-time for all members",
+        "Users can comment on tasks and tag other members"
+      ],
+      "priority": "High",
+      "dependencies": [
+        "User authentication module",
+        "Real-time data synchronization service"
+      ],
+      "non_functional": [
+        "Real-time updates must have latency under 500ms",
+        "System must support at least 100 concurrent active users per project"
+      ]
+    }
+  ],
+  "notes": "Requirement is high-level; specific collaboration tools (e.g., chat, file sharing) not detailed. Assumed core collaboration includes shared projects, task assignment, comments, and real-time updates."
+}
