@@ -1,0 +1,81 @@
+{
+  "epic": {
+    "title": "Messaging and Communication",
+    "description": "Implement core text messaging and video calling features to enable real-time communication between users, including both one-to-one and group interactions."
+  },
+  "stories": [
+    {
+      "id": "story-1",
+      "title": "Real-Time Text Messaging",
+      "description": "Enable users to send and receive text messages instantly between individuals or groups with status indicators and chronological display.",
+      "acceptanceCriteria": [
+        "Messages are delivered to recipients within 1 second under normal network conditions",
+        "Sent, delivered, and read status indicators are displayed correctly for each message",
+        "Messages are displayed in chronological order for all conversation types",
+        "Supports group chats with up to 50 participants"
+      ],
+      "tasks": [
+        {
+          "title": "Implement backend messaging service",
+          "description": "Develop real-time messaging server to handle instant message delivery and status updates."
+        },
+        {
+          "title": "Create frontend messaging UI",
+          "description": "Build the chat interface with conversation view, input box, and status indicators."
+        },
+        {
+          "title": "Integrate real-time messaging protocol",
+          "description": "Use WebSockets or a similar protocol to send and receive messages with low latency."
+        },
+        {
+          "title": "Implement group messaging",
+          "description": "Allow creation and management of group chats with up to 50 participants."
+        },
+        {
+          "title": "Add message ordering logic",
+          "description": "Ensure messages are sorted chronologically across different clients."
+        }
+      ],
+      "priority": "High"
+    },
+    {
+      "id": "story-2",
+      "title": "Video Calling Feature",
+      "description": "Allow users to initiate and participate in one-to-one and group video calls in real-time with high-quality video and audio.",
+      "acceptanceCriteria": [
+        "Users can initiate and receive video calls from their contact list",
+        "Video and audio quality remain stable at or above 720p resolution under standard broadband conditions",
+        "Supports group video calls with up to 10 participants",
+        "Call connection time is under 3 seconds"
+      ],
+      "tasks": [
+        {
+          "title": "Develop media streaming backend",
+          "description": "Set up a media server to stream audio and video for calls."
+        },
+        {
+          "title": "Integrate WebRTC for video calling",
+          "description": "Implement real-time media transmission using WebRTC framework."
+        },
+        {
+          "title": "Create video call UI",
+          "description": "Design and build the user interface for call initiation, participation, and controls."
+        },
+        {
+          "title": "Implement call signaling",
+          "description": "Set up real-time signaling service to manage call setup and teardown."
+        },
+        {
+          "title": "Add group video call support",
+          "description": "Implement functionality to host and join group calls with up to 10 participants."
+        },
+        {
+          "title": "Ensure encryption for calls",
+          "description": "Implement end-to-end encryption for both video and audio streams."
+        }
+      ],
+      "priority": "High"
+    }
+  ],
+  "notes": "Revised per feedback: i need another story"
+}
