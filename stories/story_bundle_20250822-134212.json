@@ -1,0 +1,235 @@
+{
+  "epic": {
+    "title": "Messaging and Communication",
+    "description": "Implement core real-time text messaging and video calling capabilities for the application, enabling one-to-one and group communication across devices.",
+    "labels": [
+      {
+        "name": "communication",
+        "type": "epic"
+      },
+      {
+        "name": "real-time",
+        "type": "epic"
+      },
+      {
+        "name": "frontend",
+        "type": "epic"
+      },
+      {
+        "name": "backend",
+        "type": "epic"
+      }
+    ],
+    "features": [
+      "Real-Time Text Messaging",
+      "Video Calling"
+    ]
+  },
+  "stories": [
+    {
+      "id": "story-1",
+      "title": "Implement Real-Time Text Messaging",
+      "description": "Enable users to send and receive text messages instantly between individuals or groups, supporting delivery within 1 second and group chats with at least 50 participants.",
+      "acceptanceCriteria": [
+        "Messages are delivered to recipients within 1 second under normal network conditions",
+        "Messages appear in correct chronological order across all devices",
+        "Unread messages are clearly indicated to the user",
+        "System supports group chats with at least 50 participants"
+      ],
+      "tasks": [
+        {
+          "title": "Design messaging UI/UX for individual and group chats",
+          "description": "Create intuitive chat interfaces for users, including message list, input box, and unread indicators.",
+          "labels": [
+            {
+              "name": "ui-design",
+              "type": "task"
+            },
+            {
+              "name": "frontend",
+              "type": "task"
+            }
+          ],
+          "feature": "Real-Time Text Messaging",
+          "epic": "Messaging and Communication"
+        },
+        {
+          "title": "Develop WebSocket-based message delivery system",
+          "description": "Implement backend services for real-time text message transmission with latency under 1 second.",
+          "labels": [
+            {
+              "name": "backend",
+              "type": "task"
+            },
+            {
+              "name": "real-time",
+              "type": "task"
+            },
+            {
+              "name": "api",
+              "type": "task"
+            }
+          ],
+          "feature": "Real-Time Text Messaging",
+          "epic": "Messaging and Communication"
+        },
+        {
+          "title": "Implement group chat support up to 50 participants",
+          "description": "Add backend and UI features to enable large group messaging with performance optimization.",
+          "labels": [
+            {
+              "name": "backend",
+              "type": "task"
+            },
+            {
+              "name": "frontend",
+              "type": "task"
+            }
+          ],
+          "feature": "Real-Time Text Messaging",
+          "epic": "Messaging and Communication"
+        },
+        {
+          "title": "Integrate unread message indicators",
+          "description": "Provide visual cues for unread messages in chats.",
+          "labels": [
+            {
+              "name": "frontend",
+              "type": "task"
+            },
+            {
+              "name": "ui-enhancement",
+              "type": "task"
+            }
+          ],
+          "feature": "Real-Time Text Messaging",
+          "epic": "Messaging and Communication"
+        }
+      ],
+      "priority": "High",
+      "labels": [
+        {
+          "name": "frontend",
+          "type": "story"
+        },
+        {
+          "name": "backend",
+          "type": "story"
+        },
+        {
+          "name": "real-time",
+          "type": "story"
+        },
+        {
+          "name": "critical",
+          "type": "story"
+        }
+      ],
+      "feature": "Real-Time Text Messaging",
+      "epic": "Messaging and Communication"
+    },
+    {
+      "id": "story-2",
+      "title": "Implement Video Calling",
+      "description": "Allow users to initiate and participate in one-to-one and group video calls in real time, supporting adaptive quality and encryption.",
+      "acceptanceCriteria": [
+        "Users can start and receive video calls from their contact list",
+        "Video and audio streams have less than 300ms latency under normal conditions",
+        "Support for at least 4 participants in a group video call",
+        "Call quality automatically adjusts based on network conditions"
+      ],
+      "tasks": [
+        {
+          "title": "Design video calling UI/UX for individual and group calls",
+          "description": "Create interfaces for initiating, joining, and managing video calls.",
+          "labels": [
+            {
+              "name": "ui-design",
+              "type": "task"
+            },
+            {
+              "name": "frontend",
+              "type": "task"
+            }
+          ],
+          "feature": "Video Calling",
+          "epic": "Messaging and Communication"
+        },
+        {
+          "title": "Integrate WebRTC for real-time video and audio streaming",
+          "description": "Implement backend and frontend code for sending and receiving encrypted video/audio streams.",
+          "labels": [
+            {
+              "name": "backend",
+              "type": "task"
+            },
+            {
+              "name": "frontend",
+              "type": "task"
+            },
+            {
+              "name": "real-time",
+              "type": "task"
+            }
+          ],
+          "feature": "Video Calling",
+          "epic": "Messaging and Communication"
+        },
+        {
+          "title": "Implement group video calls (up to 4 participants)",
+          "description": "Enable multi-party video conferencing with network optimization and quality adaptation.",
+          "labels": [
+            {
+              "name": "backend",
+              "type": "task"
+            },
+            {
+              "name": "frontend",
+              "type": "task"
+            }
+          ],
+          "feature": "Video Calling",
+          "epic": "Messaging and Communication"
+        },
+        {
+          "title": "Add end-to-end encryption for calls",
+          "description": "Ensure privacy and security for video and audio data over the network.",
+          "labels": [
+            {
+              "name": "security",
+              "type": "task"
+            },
+            {
+              "name": "backend",
+              "type": "task"
+            }
+          ],
+          "feature": "Video Calling",
+          "epic": "Messaging and Communication"
+        }
+      ],
+      "priority": "High",
+      "labels": [
+        {
+          "name": "frontend",
+          "type": "story"
+        },
+        {
+          "name": "backend",
+          "type": "story"
+        },
+        {
+          "name": "real-time",
+          "type": "story"
+        },
+        {
+          "name": "critical",
+          "type": "story"
+        }
+      ],
+      "feature": "Video Calling",
+      "epic": "Messaging and Communication"
+    }
+  ],
+  "notes": "Assumed requirement includes both one-to-one and group communication for text and video. Dependencies such as user authentication and real-time server infrastructure are handled outside the scope of these stories. Performance constraints (latency and uptime) are included as acceptance criteria where applicable."
+}
