@@ -1,0 +1,150 @@
+{
+  "epic": {
+    "title": "Team Collaboration",
+    "description": "Enable teams to work together efficiently by providing collaborative tools within the task management application.",
+    "labels": [
+      {
+        "name": "teamwork",
+        "type": "epic"
+      },
+      {
+        "name": "collaboration",
+        "type": "epic"
+      },
+      {
+        "name": "real-time",
+        "type": "epic"
+      }
+    ],
+    "features": [
+      "Collaborative Task Boards"
+    ]
+  },
+  "stories": [
+    {
+      "id": "story-1",
+      "title": "Implement Collaborative Task Boards",
+      "description": "Develop shared task boards allowing team members to create, assign, and manage tasks with real-time updates.",
+      "acceptanceCriteria": [
+        "Users can create a new shared board and invite team members",
+        "Tasks can be assigned to specific team members",
+        "Changes to tasks are visible to all members within 5 seconds",
+        "Users can update task status and details",
+        "System supports at least 100 concurrent users per board",
+        "Data is secured with role-based access control"
+      ],
+      "tasks": [
+        {
+          "title": "Design Task Board UI/UX",
+          "description": "Create user interface mockups and interaction flows for task boards.",
+          "labels": [
+            {
+              "name": "frontend",
+              "type": "task"
+            },
+            {
+              "name": "ui-ux",
+              "type": "task"
+            }
+          ],
+          "feature": "Collaborative Task Boards",
+          "epic": "Team Collaboration"
+        },
+        {
+          "title": "Implement Board Creation and Invitation System",
+          "description": "Allow users to create a board, set permissions, and invite others.",
+          "labels": [
+            {
+              "name": "backend",
+              "type": "task"
+            },
+            {
+              "name": "api",
+              "type": "task"
+            },
+            {
+              "name": "security",
+              "type": "task"
+            }
+          ],
+          "feature": "Collaborative Task Boards",
+          "epic": "Team Collaboration"
+        },
+        {
+          "title": "Develop Real-Time Task Synchronization",
+          "description": "Ensure task changes propagate to all connected users within 5 seconds.",
+          "labels": [
+            {
+              "name": "backend",
+              "type": "task"
+            },
+            {
+              "name": "real-time",
+              "type": "task"
+            }
+          ],
+          "feature": "Collaborative Task Boards",
+          "epic": "Team Collaboration"
+        },
+        {
+          "title": "Implement Role-Based Access Control",
+          "description": "Secure boards and tasks based on user roles and permissions.",
+          "labels": [
+            {
+              "name": "backend",
+              "type": "task"
+            },
+            {
+              "name": "security",
+              "type": "task"
+            }
+          ],
+          "feature": "Collaborative Task Boards",
+          "epic": "Team Collaboration"
+        },
+        {
+          "title": "Testing and Quality Assurance",
+          "description": "Perform functional, usability, performance, and security testing for collaborative boards.",
+          "labels": [
+            {
+              "name": "qa",
+              "type": "task"
+            },
+            {
+              "name": "testing",
+              "type": "task"
+            }
+          ],
+          "feature": "Collaborative Task Boards",
+          "epic": "Team Collaboration"
+        }
+      ],
+      "priority": "High",
+      "labels": [
+        {
+          "name": "frontend",
+          "type": "story"
+        },
+        {
+          "name": "backend",
+          "type": "story"
+        },
+        {
+          "name": "real-time",
+          "type": "story"
+        },
+        {
+          "name": "security",
+          "type": "story"
+        },
+        {
+          "name": "collaboration",
+          "type": "story"
+        }
+      ],
+      "feature": "Collaborative Task Boards",
+      "epic": "Team Collaboration"
+    }
+  ],
+  "notes": "Revised per feedback: Please revise the user stories based on these edited changes:\n\n\ud83c\udfaf **Story Agent - User Stories Generated!**\n\n## Epic: Team Collaboration\nEnable teams to work together efficiently by providing collaborative tools within the task management application.\n\n**Features:**\n- Collaborative Task Boards\n\n**Labels:** teamwork epic and features, collaboration epic, real-time epic\n\n## User Stories\n\n### 1. Implement Collaborative Task Boards\n**Description:** Develop shared task boards allowing team members to create, assign, and manage tasks with real-time updates.\n\n**Acceptance Criteria:**\n- Users can create a new shared board and invite team members\n- Tasks can be assigned to specific team members\n- Changes to tasks are visible to all members within 5 seconds\n- Users can update task status and details\n- System supports at least 100 concurrent users per board\n- Data is secured with role-based access control\n\n**Tasks:**\n- **Design Task Board UI/UX**: Create user interface mockups and interaction flows for task boards.\n  Feature: Collaborative Task Boards | Epic: Team Collaboration | Labels: frontend task, ui-ux task\n- **Implement Board Creation and Invitation System**: Allow users to create a board, set permissions, and invite others.\n  Feature: Collaborative Task Boards | Epic: Team Collaboration | Labels: backend task, api task, security task\n- **Develop Real-Time Task Synchronization**: Ensure task changes propagate to all connected users within 5 seconds.\n  Feature: Collaborative Task Boards | Epic: Team Collaboration | Labels: backend task, real-time task\n- **Implement Role-Based Access Control**: Secure boards and tasks based on user roles and permissions.\n  Feature: Collaborative Task Boards | Epic: Team Collaboration | Labels: backend task, security task\n- **Testing and Quality Assurance**: Perform functional, usability, performance, and security testing for collaborative boards.\n  Feature: Collaborative Task Boards | Epic: Team Collaboration | Labels: qa task, testing task\n\n**Priority:** High\n**Feature:** Collaborative Task Boards\n**Epic:** Team Collaboration\n**Labels:** frontend story, backend story, real-time story, security story, collaboration story\n\n---\n\n## Notes\nRequirement is high-level; assumptions made about real-time updates, role-based access, and concurrent usage.\n\n\nWhat would you like to work on next? I can help you refine these stories, estimate story points, or organize them into sprints."
+}
